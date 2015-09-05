@@ -1,0 +1,279 @@
+@font-face {
+    font-family: "Caviar";
+    src: url("../fonts/CaviarDreams_Bold.ttf") format("truetype");
+}
+html
+{
+	background-image: url("../Imagenes/agregacionesBackground.jpg"); /*Imagen de fondo*/
+	text-rendering: optimizeLegibility;/*Poner texto un poco más claro*/
+}
+
+h2
+{
+	text-align: center;
+	color: #7c795d; 
+	font-family: 'Trocchi', serif; 
+	font-size: 45px; 
+	font-weight: normal; 
+	line-height: 48px; 
+	margin: 0; 
+	color: rgb(153,66,21);
+}
+input
+{
+	border: none;
+	-webkit-box-shadow: 
+	inset 0 0 8px  rgba(0,0,0,0.1),
+		0 0 16px rgba(0,0,0,0.1); 
+		-moz-box-shadow: 
+	inset 0 0 8px  rgba(0,0,0,0.1),
+		0 0 16px rgba(0,0,0,0.1); 
+		box-shadow: 
+	inset 0 0 8px  rgba(0,0,0,0.1),
+		0 0 16px rgba(0,0,0,0.1); 
+		padding: 15px;
+	background: rgba(255,255,255,0.5);
+	margin: 0 0 10px 0;
+	height: 15px;
+	width: 205px;
+}
+footer
+{
+	position: absolute;
+}
+p
+{
+	font-family: sans-serif;
+	font-size: italic;
+}
+.comp
+{
+	font-weight: bold;
+	font-family: "arabic";
+	text-align: center;
+	font-size: 90px;
+	color: rgb(2,137,16);
+	text-shadow: 0px 2px 3px rgb(0,0,0);
+	text-align: left;
+}
+/*Datos del header*/
+.logo
+{
+	width: 100px;
+	background-color: transparent;
+}
+.logout
+{
+	background-color: transparent;
+	border: none;
+	float: right;
+}
+.fecha
+{
+	text-align: right;
+	right: 15px;
+	top: 154px;
+	font-family: sans-serif;
+	font-size: 3;
+	color: black;
+	position: absolute;
+}
+/*Lineas de colores*/
+div.hr6
+{
+	background: rgb(8,7,7) no-repeat scroll center;
+	height:25px;
+}
+div hr 
+{
+	display: none;
+}
+.Insercion
+{
+	background: transparent;
+}
+.agregacion
+{
+	border: 1px solid transparent;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	font-size: 20px;
+	padding: 4px 7px;
+	outline: 0;
+	-webkit-appearance: none;
+	height: 30px;
+}
+/*Menus*/
+.menuTitulos
+{
+	font-size: 20px;
+}
+
+.menu
+{
+	display:block;
+	position: absolute;
+	top: 17px;
+	left: 0px;
+}
+ 
+.menu li{
+	display: inline-block;
+	position: relative;
+	z-index:100;
+}
+	 
+.menu li a {
+	font-weight:600;
+	text-decoration:none;
+	padding:11px;
+	display:block;
+	color:#ffffff;
+	-webkit-transition: all 0.2s ease-in-out 0s;
+	-moz-transition: all 0.2s ease-in-out 0s;
+	-o-transition: all 0.2s ease-in-out 0s;
+	-ms-transition: all 0.2s ease-in-out 0s;
+	transition: all 0.2s ease-in-out 0s;
+}
+ 
+.menu ul {
+	display: none;
+	margin: 0;
+	padding: 0;
+	width: 150px;
+	position: absolute;
+	top: 55px;
+	left: 8px;
+	background: #ffffff;
+}
+ 
+.menu li:hover > ul
+{ 
+	display: block;
+}
+ 
+.menu ul li {
+	display:block;
+	float: none;
+	background:none;
+	margin:0;
+	padding:0;
+}
+ 
+.menu ul li a {
+	font-size:12px;
+	font-weight:normal;
+	display:block;
+	color:#797979;
+	border-left:3px solid #ffffff;
+	background:#ffffff;
+}
+ 
+.menu ul li a:hover, .menu ul li:hover > a
+{
+	background:#f0f0f0;
+	border-left:3px solid #9CA3DA;
+	color:#797979;
+}
+.tablei
+{
+	vertical-align: bottom;
+	padding: 10px;
+}
+
+.capturarTabla
+{
+	margin: 0 auto;
+}
+
+.opciones select {
+	background: rgb(227,227,227) url("../Imagenes/down_arrow_select.jpg") no-repeat right;
+	width: 223px;
+	height: 30px;
+	border: 1px solid transparent;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	font-size: 15px;
+	font-weight: bold;
+	font-family: "arabic";
+	color: rgb(169,169,169);
+	padding: 4px 7px;
+	outline: 0;
+	-webkit-appearance: none;
+	-webkit-box-shadow: 
+	inset 0 0 8px  rgba(0,0,0,0.1),
+		0 0 16px rgba(0,0,0,0.1); 
+		-moz-box-shadow: 
+	inset 0 0 8px  rgba(0,0,0,0.1),
+		0 0 16px rgba(0,0,0,0.1); 
+		box-shadow: -webkit-box-shadow: 
+	inset 0 0 8px  rgba(0,0,0,0.1),
+		0 0 16px rgba(0,0,0,0.1); 
+		-moz-box-shadow: 
+	inset 0 0 8px  rgba(0,0,0,0.1),
+		0 0 16px rgba(0,0,0,0.1); 
+		box-shadow: 
+}
+
+.opcionesNumericas select {
+	background: rgb(227,227,227) url("../Imagenes/down_arrow_select.jpg") no-repeat right;
+	width: 60px;
+	height: 30px;
+	border: 1px solid transparent;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	font-size: 15px;
+	font-weight: bold;
+	font-family: "arabic";
+	color: rgb(169,169,169);
+	padding: 4px 7px;
+	outline: 0;
+	-webkit-appearance: none;
+	-webkit-box-shadow: 
+	inset 0 0 8px  rgba(0,0,0,0.1),
+		0 0 16px rgba(0,0,0,0.1); 
+		-moz-box-shadow: 
+	inset 0 0 8px  rgba(0,0,0,0.1),
+		0 0 16px rgba(0,0,0,0.1); 
+		box-shadow: -webkit-box-shadow: 
+	inset 0 0 8px  rgba(0,0,0,0.1),
+		0 0 16px rgba(0,0,0,0.1); 
+		-moz-box-shadow: 
+	inset 0 0 8px  rgba(0,0,0,0.1),
+		0 0 16px rgba(0,0,0,0.1); 
+		box-shadow: 
+}
+
+
+.campo
+{
+	font-family: Caviar;
+}
+
+/*CheckBoxes*/
+.oCheckBox
+{
+	width: 20px;
+}
+/*Total*/
+.totales
+{
+	width: 195px;
+}
+/*Spinner*/
+.numbericInput
+{
+	width: 33px;
+	height: 15px;
+	vertical-align: bottom;
+	border-radius: 10px;
+	font-style: italic;
+	font-size: 12px;
+	padding: 10px;
+	padding-left: 5px;
+	padding-bottom: 5px;
+	
+}
