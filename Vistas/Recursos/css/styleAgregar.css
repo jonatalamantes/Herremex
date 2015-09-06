@@ -1,11 +1,11 @@
-/*Tabla de inseciones*/
+﻿/*Tabla de inseciones*/
 @font-face {
     font-family: "Caviar";
     src: url("../fonts/CaviarDreams_Bold.ttf") format("truetype");
 }
 html
 {
-	background-image: url("../Imagenes/background.jpg"); /*Imagen de fondo*/
+	background-image: url("../Imagenes/agregaciones.jpg"); /*Imagen de fondo*/
 	text-rendering: optimizeLegibility;/*Poner texto un poco más claro*/
 }
 

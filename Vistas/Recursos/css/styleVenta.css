@@ -4,7 +4,7 @@
 }
 html
 {
-	background-image: url("../Imagenes/agregacionesBackground.jpg"); /*Imagen de fondo*/
+	background-image: url("../Imagenes/agregaciones.jpg"); /*Imagen de fondo*/
 	text-rendering: optimizeLegibility;/*Poner texto un poco más claro*/
 }
 
@@ -79,6 +79,31 @@ p
 	position: absolute;
 }
 /*Lineas de colores*/
+div.hr1
+{
+	background: rgb(23,30,59) no-repeat scroll center;
+	height:25px;
+}
+div.hr2
+{
+	background: rgb(144,19,19) no-repeat scroll center;
+	height:25px;
+}
+div.hr3
+{
+	background: rgb(155,67,28) no-repeat scroll center;
+	height:25px;
+}
+div.hr4
+{
+	background: rgb(158,171,8) no-repeat scroll center;
+	height:25px;
+}
+div.hr5
+{
+	background: rgb(130,10,126) no-repeat scroll center;
+	height:25px;
+}
 div.hr6
 {
 	background: rgb(8,7,7) no-repeat scroll center;

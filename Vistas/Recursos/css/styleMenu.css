@@ -31,35 +31,60 @@ p
 }
 .comp
 {
-	font-weight: bold;
-	font-family: "arabic";
-	text-align: center;
-	font-size: 90px;
-	color: rgb(2,137,16);
-	text-shadow: 0px 2px 3px rgb(0,0,0);
-	text-align: left;
+  font-weight: bold;
+  font-family: "arabic";
+  text-align: center;
+  font-size: 90px;
+  color: rgb(2,137,16);
+  text-shadow: 0px 2px 3px rgb(0,0,0);
+  text-align: left;
 }
+/*Datos del header*/
 .logo
 {
-	width: 100px;
-	background-color: transparent;
+  width: 100px;
+  background-color: transparent;
 }
 .logout
 {
-	background-color: transparent;
-	border: none;
-	float: right;
+  background-color: transparent;
+  border: none;
+  float: right;
 }
-
-div.hr0
+/*Lineas de colores*/
+div.hr1
 {
-	background: rgb(30,39,49) no-repeat scroll center;
-	height:25px;
+  background: rgb(23,30,59) no-repeat scroll center;
+  height:25px;
 }
-
+div.hr2
+{
+  background: rgb(144,19,19) no-repeat scroll center;
+  height:25px;
+}
+div.hr3
+{
+  background: rgb(155,67,28) no-repeat scroll center;
+  height:25px;
+}
+div.hr4
+{
+  background: rgb(158,171,8) no-repeat scroll center;
+  height:25px;
+}
+div.hr5
+{
+  background: rgb(130,10,126) no-repeat scroll center;
+  height:25px;
+}
+div.hr6
+{
+  background: rgb(8,7,7) no-repeat scroll center;
+  height:25px;
+}
 div hr 
 {
-	display: none;
+  display: none;
 }
 
 /*Menus*/
@@ -102,6 +127,7 @@ a:hover
 {
 
 }
+  
 
 /* Salto del icono */
 @-webkit-keyframes hvr-wobble-vertical {

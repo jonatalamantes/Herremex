@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Herremex</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="Recursos/css/style|operacion|.css">
+    <link rel="stylesheet" href="Recursos/css/font-awesome.css">
+    <script type="text/javascript" src="scipts.js"></script>
+    <script type="text/javascript" src="Ajax/ajax.js"></script>
+</head>
+<body onload="fechaHoy();">
+|header|
+<h2>
+    |operacion| registro de Sucursales
+</h2>
+<section class="capturar">
+    <table class="capturarTabla">
+        <tr>
+            <td>
+                <a id = "tipoAccion" hidden>|operacion|</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p class="campo" id = 'campo'>
+                    Inserta la calle de la sucursal:
+                </p>
+            </td>
+            <td class="tablei">
+                <input name="aCalle" type="text" id="aCalle" class="agregacion" placeholder="Calle Sucursal" onclick="inicializarSucursal()">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p class="campo" id = 'campo'>
+                    Inserta el numero del edificio:
+                </p>
+            </td>
+            <td class="tablei">
+                <input name="aNoEdificio" type="text" id="aNoEdificio" class="agregacion" placeholder="Numero Edificio" onclick="inicializarSucursal()">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p class="campo" id = 'campo'>
+                    Inserta la colonia:
+                </p>
+            </td>
+            <td class="tablei">
+                <input name="aColonia" type="text" id="aColonia" class="agregacion" placeholder="Colonia" onclick="inicializarSucursal()">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p class="campo" id = 'campo'>
+                    Selecione la ciudad de la sucursal:
+                </p>
+            </td>
+            <td class="tablei">
+                <div class="opciones">
+                    |ciudades|
+                </div>  
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center">
+                <button style="background-color: transparent" onclick="guardarSucursal()"><span class="fa fa-floppy-o fa-5x"></span></button>
+            </td>
+        </tr>
+    </table>
+</section>
+|footer|
+<script type="text/javascript">inicializarSucursal();</script>
+</body>
+</html>

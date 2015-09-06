@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Herremex</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="Recursos/css/style|operacion|.css">
+    <link rel="stylesheet" href="Recursos/css/font-awesome.css">
+    <script type="text/javascript" src="scipts.js"></script>
+    <script type="text/javascript" src="Ajax/ajax.js"></script>
+</head>
+<body onload="fechaHoy();">
+|header|
+<h2>
+    |operacion| registro de Empleados
+</h2>
+<section class="capturar">
+    <table class="capturarTabla">
+        <tr>
+            <td>
+                <p class="campo" id = 'campo'>
+                    Inserta la CURP del empleado:
+                </p>
+            </td>
+            <td class="tablei">
+                <input name="aCURP" type="text" id="aCURP" class="agregacion" placeholder="De 18 Caracteres" onclick="inicializarEmpleado()" onkeyup="pressKey('aCURP', '18');">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p class="campo" id = 'campo'>
+                    Inserta el nombre del empleado:
+                </p>
+            </td>
+            <td class="tablei">
+                <input name="aNombre" type="text" id="aNombre" class="agregacion" placeholder="Nombre Empleado" onclick="inicializarEmpleado()">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p class="campo" id = 'campo'>
+                    Inserta el Segundo nombre:
+                </p>
+            </td>
+            <td class="tablei">
+                <input name="aNombreS" type="text" id="aNombreS" class="agregacion" placeholder="Segundo Nombre" onclick="inicializarEmpleado()">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p class="campo" id = 'campo'>
+                    Inserta el apellido paterno:
+                </p>
+            </td>
+            <td class="tablei">
+                <input name="aApellidoP" type="text" id="aApellidoP" class="agregacion" placeholder="Apellido Paterno"  onclick="inicializarEmpleado()">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p class="campo" id = 'campo'>
+                    Inserta el apellido materno:
+                </p>
+            </td>
+            <td class="tablei">
+                <input name="aApellidoM" type="text" id="aApellidoM" class="agregacion" placeholder="Apellido Materno" onclick="inicializarEmpleado()">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p class="campo" id = 'campo'>
+                    Inserta la calle del empleado:
+                </p>
+            </td>
+            <td class="tablei">
+                <input name="aCalle" type="text" id="aCalle" class="agregacion" placeholder="Calle Empleado" onclick="inicializarEmpleado()">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p class="campo" id = 'campo'>
+                    Inserta el numero de la vivienda:
+                </p>
+            </td>
+            <td class="tablei">
+                <input name="aNoVivienda" type="text" id="aNoVivienda" class="agregacion" placeholder="Numero Vivienda" onclick="inicializarEmpleado()">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p class="campo" id = 'campo'>
+                    Inserta el numero Interior:
+                </p>
+            </td>
+            <td class="tablei">
+                <input name="aNoInterior" type="text" id="aNoInterior" class="agregacion" placeholder="Numero Interior" onclick="inicializarEmpleado()">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p class="campo" id = 'campo'>
+                    Inserta la colonia:
+                </p>
+            </td>
+            <td class="tablei">
+                <input name="aColonia" type="text" id="aColonia" class="agregacion" placeholder="Colonia" onclick="inicializarEmpleado()">
+            </td>
+        </tr>
+        <tr id = 'campo2'>
+            <td>
+                <p class="campo" id = 'campo'>
+                    Inserta la contraseña para el Sistema:
+                </p>
+            </td>
+            <td class="tablei">
+                <input name="aPass" type="password" id="aPass" class="agregacion" placeholder="Mínimo 8 caracteres" onclick="inicializarEmpleado()">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p class="campo" id = 'campo'>
+                    Selecione la ciudad del empleado:
+                </p>
+            </td>
+            <td class="tablei">
+                <div class="opciones">
+                    |ciudades|
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p class="campo" id = 'campo'>
+                    Selecione el Turno del empleado:
+                </p>
+            </td>
+            <td class="tablei">
+                <div class="opciones">
+                    |turnos|
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p class="campo" id = 'campo'>
+                    Selecione el tipo de empleado:
+                </p>
+            </td>
+            <td class="tablei">
+                <div class="opciones">
+                    |tipos|
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p class="campo" id = 'campo'>
+                    Selecione la sucursal del empleado:
+                </p>
+            </td>
+            <td class="tablei">
+                <div class="opciones">
+                    |sucursales|
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center">
+                <button id = "bAnterior" style="background-color: transparent" onclick="href('busquedaEmpleados')"><span class="fa fa-arrow-left fa-5x"></span></button>
+                <button id = "bGuardar" style="background-color: transparent" onclick="guardarEmpleados()"><span class="fa fa-floppy-o fa-5x"></span></button>
+            </td>
+        </tr>
+    </table>
+</section>
+<script type="text/javascript">inicializarEmpleado();</script>
+|footer|
+</body>
+</html>

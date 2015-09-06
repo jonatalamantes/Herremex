@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Herremex</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="Recursos/css/style|operacion|.css">
+    <link rel="stylesheet" href="Recursos/css/font-awesome.css">
+    <script type="text/javascript" src="scipts.js"></script>
+    <script type="text/javascript" src="Ajax/ajax.js"></script>
+</head>
+<body onload="fechaHoy();">
+|header|
+<h2>
+    |operacion| registro de Distribuidores
+</h2>
+<section class="capturar">
+    <table class="capturarTabla">
+        <tr>
+            <td>
+                <a id = "tipoAccion" hidden>|operacion|</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p class="campo" id = 'campo'>
+                    Inserta el nombre del distribuidor:
+                </p>
+            </td>
+            <td class="tablei">
+                <input name="aNombre" type="text" id="aNombre" class="agregacion" placeholder="Nombre Distribuidor" onclick="inicializarDistribuidores()">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p class="campo" id = 'campo'>
+                    Inserta la direccion del distribuidor::
+                </p>
+            </td>
+            <td class="tablei">
+                <input name="aDireccion" type="text" id="aDireccion" class="agregacion" placeholder="Direccion" onclick="inicializarDistribuidores()">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p class="campo" id = 'campo'>
+                    Selecione la herramienta que distribuye:
+                </p>
+            </td>
+            <td class="tablei">
+                <div class="opciones">
+                    |herramientas|
+                </div>
+            </td>
+        </tr>
+        <tr id = 'campo1'>
+            <td>
+                <p class="campo" id = 'campo'>
+                    Selecione la calidad de la herramienta:
+                </p>
+            </td>
+            <td class="tablei">
+                <div class="opciones">
+                    |calidades|
+                </div>
+            </td>
+        </tr>
+        <tr id = 'campo2'>
+            <td>
+                <p class="campo" id = 'campo'>
+                    Inserta el precio de compra de la herramienta:
+                </p>
+            </td>
+            <td class="tablei">
+                <input name="aPrecioCompra" type="text" id="aPrecioCompra" class="agregacion" placeholder="Precio de compra" onclick="inicializarDistribuidores()">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center">
+                <button style="background-color: transparent" onclick="guardarDistribuidores()"><span class="fa fa-floppy-o fa-5x"></span></button>
+            </td>
+        </tr>
+    </table>
+</section>
+<script type="text/javascript">inicializarDistribuidores();</script>
+|footer|
+</body>
+</html>

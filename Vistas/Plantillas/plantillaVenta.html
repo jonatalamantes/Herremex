@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Herremex</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="Recursos/css/styleVenta.css">
+    <link rel="stylesheet" href="Recursos/css/font-awesome.css">
+    <script type="text/javascript" src="scipts.js"></script>
+    <script type="text/javascript" src="Ajax/ajax.js"></script>
+    <script type="text/javascript" src="Recursos/jquery/JQuery.js"></script>
+</head>
+<body onload="fechaHoy();">
+|header|
+<h2>
+    Registrar Venta
+</h2>
+<section id="seccionDeVentas">
+<table class="capturarTabla">
+        <tr>
+            <td>
+                <a id = "tipoAccion" hidden></a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p class="campo" id = 'campo'>
+                    Selecione la sucursal en la que se realizo la compra:
+                </p>
+            </td>
+            <td class="tablei">
+                <div class="opciones">
+                    |sucursales|
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p class="campo" id = 'campo'>
+                    Selecione el cliente que se realizo la compra:
+                </p>
+            </td>
+            <td class="tablei">
+                <div class="opciones">
+                    |clientes|
+                </div>
+            </td>
+        </tr>
+            |herramientasCantidad|
+        <tr>
+            <td rowspan="2">
+                <p class="campo" id="campo">Subtotal de la compra:</p>
+            </td>
+            <td style="text-align: center" rowspan="2">
+                <input id="subtotal" disabled class="totales">
+            </td>
+            <td>
+                <input type="checkbox" id="oFacturar" class="oCheckBox" checked>Facturar
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox" id="oEnvioDomicilio" class="oCheckBox">Envio a Domicilio
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p class="campo" id="campo">Total (IVA + subtotal):</p>
+            </td>
+            <td style="text-align: center">
+                <input id="total" disabled class="totales">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4" align="center">
+                <button id = "bAnterior" style="background-color: transparent" onclick="href('VerVenta.php')"><span class="fa fa-times fa-5x"></span></button>
+                <button id = "bGuardar" style="background-color: transparent" onclick="guardarCompraVenta()"><span class="fa fa-credit-card fa-5x"></span></button>
+            </td>
+        </tr>
+    </table>
+</section>
+<a id="operacion" hidden>Insercion</a>
+<script type="text/javascript">inicializeSelect();</script>
+|footer|
+</body>
+</html>

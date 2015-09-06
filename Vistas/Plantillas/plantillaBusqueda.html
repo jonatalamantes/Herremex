@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Herremex</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="Recursos/css/style.css">
+    <link rel="stylesheet" type="text/css" href="Recursos/css/font-awesome.css">
+    <script type="text/javascript" src="scipts.js"></script>
+    <script type="text/javascript" src="Ajax/ajax.js"></script>
+</head>
+<body onload="fechaHoy();">
+|header|
+<h2>
+    <button id = "prev" onclick="prev(5, 'dataTable')" hidden><span class="fa fa-arrow-left fa-2x"></span></button>
+    Busqueda de |objeto|
+    <button id = "next" onclick="next(5, 'dataTable')" hidden><span class="fa fa-arrow-right fa-2x"></span></button>
+</h2>
+<div id="busquedaBasica" class="seccionbusqueda"><!--Busqueda con parametros basicos-->
+    |busquedaBasica|
+</div>
+<div id="busquedaAvanzada" style="display: none;" class="seccionbusqueda"><!--Busqueda con parametros avanzados-->
+    |busquedaAvanzada|
+</div>
+<div id="tablaDeResultados"><!--Tabla de resultados de busqueda-->
+    <table id = 'dataTable'>
+        <tbody class="table-hover">
+            |tablaContenido|
+        <tbody>
+    </table>
+    <br>
+</div>
+<script type="text/javascript">inicializeHidden(5, 'dataTable');</script>
+|footer|
+</body>
+</html>

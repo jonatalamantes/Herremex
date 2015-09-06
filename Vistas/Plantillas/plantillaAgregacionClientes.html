@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Herremex</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="Recursos/css/style|operacion|.css">
+    <link rel="stylesheet" href="Recursos/css/font-awesome.css">
+    <script type="text/javascript" src="scipts.js"></script>
+    <script type="text/javascript" src="Ajax/ajax.js"></script>
+</head>
+<body onload="fechaHoy();">
+|header|
+<h2>
+    |operacion| registro de Clientes
+</h2>
+<section class="capturar">
+    <table class="capturarTabla">
+        <tr>
+            <td>
+                <a id = "tipoAccion" hidden>|operacion|</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p class="campo" id = 'campo'>
+                    Inserta el RFC del cliente:
+                </p>
+            </td>
+            <td class="tablei">
+                <input name="aRFC" type="text" id="aRFC" class="agregacion" placeholder="De 12 o 13 Caracteres" onclick="inicializarClientes()" onkeyup="pressKey('aRFC', '12');">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p class="campo" id = 'campo'>
+                    Inserta el nombre del cliente:
+                </p>
+            </td>
+            <td class="tablei">
+                <input name="aNombre" type="text" id="aNombre" class="agregacion" placeholder="Nombre Cliente" onclick="inicializarClientes()">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p class="campo" id = 'campo'>
+                    Selecione el regimen del cliente:
+                </p>
+            </td>
+            <td class="tablei">
+                <div class="opciones">
+                    <select id="aRegimen" onchange="inicializarClientes()">
+                        <option>Fisica</option>
+                        <option>Moral</option>
+                    </select>
+                </div>
+            </td>
+        </tr>
+        <tr id = 'campo2'>
+            <td>
+                <p class="campo" id = 'campo'>
+                    Selecione el sexo del cliente:
+                </p>
+            </td>
+            <td class="tablei">
+                <div class="opciones">
+                    <select id="aSexo">
+                        <option>Femenino</option>
+                        <option>Masculino</option>
+                    </select>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p class="campo" id = 'campo'>
+                    Inserta la calle del cliente:
+                </p>
+            </td>
+            <td class="tablei">
+                <input name="aCalle" type="text" id="aCalle" class="agregacion" placeholder="Calle Cliente" onclick="inicializarClientes()">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p class="campo" id = 'campo'>
+                    Inserta el numero del edificio:
+                </p>
+            </td>
+            <td class="tablei">
+                <input name="aNoEdificio" type="text" id="aNoEdificio" class="agregacion" placeholder="Numero Edificio" onclick="inicializarClientes()">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p class="campo" id = 'campo'>
+                    Selecione la ciudad del cliente:
+                </p>
+            </td>
+            <td class="tablei">
+                <div class="opciones">
+                    |ciudades|
+                </div>  
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center">
+                <button style="background-color: transparent" onclick="guardarClientes()"><span class="fa fa-floppy-o fa-5x"></span></button>
+            </td>
+        </tr>
+    </table>
+</section>
+|footer|
+<script type="text/javascript">inicializarClientes();</script>
+</body>
+</html>

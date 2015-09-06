@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Herremex</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="Recursos/css/style|operacion|.css">
+    <link rel="stylesheet" href="Recursos/css/font-awesome.css">
+    <script type="text/javascript" src="scipts.js"></script>
+    <script type="text/javascript" src="Ajax/ajax.js"></script>
+</head>
+<body onload="fechaHoy();">
+|header|
+<h2>
+    |operacion| registro de Herramientas
+</h2>
+<section class="capturar">
+    <table class="capturarTabla">
+        <tr>
+            <td>
+                <a id = "tipoAccion" hidden>|operacion|</a>
+            </td>
+        </tr>
+            <td>
+                <p class="campo" id = 'campo'>
+                    Inserta el nombre de la herramienta:
+                </p>
+            </td>
+            <td class="tablei">
+                <input name="aNombre" type="text" id="aNombre" class="agregacion" placeholder="Nombre Herramienta" onclick="inicializarHerramienta()">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p class="campo" id = 'campo'>
+                    Selecione el tipo de la herramienta:
+                </p>
+            </td>
+            <td class="tablei">
+                <div class="opciones">
+                    |tipos|
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p class="campo" id = 'campo'>
+                    Inserta el precio de la herramienta:
+                </p>
+            </td>
+            <td class="tablei">
+                <input name="aPrecio" type="text" id="aPrecio" class="agregacion" placeholder="Precio Herramienta" onclick="inicializarHerramienta()">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p class="campo" id = 'campo'>
+                    Inserta la cantidad de la herramienta:
+                </p>
+            </td>
+            <td class="tablei">
+                <input name="aCantidad" type="text" id="aCantidad" class="agregacion" placeholder="Cantidad de Herramientas" onclick="inicializarHerramienta()">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p class="campo" id = 'campo'>
+                    Selecione la marca de la herramienta:
+                </p>
+            </td>
+            <td class="tablei">
+                <div class="opciones">
+                    |marcas|
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center">
+                <button style="background-color: transparent" onclick="guardarHerramienta()"><span class="fa fa-floppy-o fa-5x"></span></button>
+            </td>
+        </tr>
+    </table>
+</section>
+|footer|
+<script type="text/javascript">inicializarHerramienta();</script>
+</body>
+</html>

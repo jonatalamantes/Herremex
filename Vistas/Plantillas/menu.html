@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Herremex</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="Recursos/css/styleMenu.css">
+    <link rel="stylesheet" type="text/css" href="Recursos/css/font-awesome.css">
+    <script type="text/javascript" src="scipts.js"></script>
+    <script type="text/javascript" src="Ajax/ajax.js"></script>
+</head>
+<body onload="fechaHoy();">
+<header>
+    <h1 class="comp">
+        <img src="Recursos/Imagenes/logo.png" class="logo"><!--Logo-->
+            Herremex
+        <button class="logout" onclick="cerrarSession();"><span class="fa fa-sign-out fa-2x">Salir</span></button>
+        <div class="hr2"><hr /></div><!--Linea Roja-->
+    </h1>
+</header>
+<h2>
+    Bievenid@  |username| <br>
+    ¿A que menú quieres acceder?
+</h2>
+<a id="operacion" hidden>Menú</a>
+<section class="menu">
+    <table class="menuTabla">
+        |tablaContenido|
+    </table>
+</section>
+|footer|
+</body>
+</html>
