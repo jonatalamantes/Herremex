@@ -626,8 +626,6 @@ function inicializarEmpleado()
 
 function guardarEmpleados()
 {
-    console.log("hola");
-
     curp       = document.getElementById('aCURP');
     nombre1    = document.getElementById('aNombre');
     nombre2    = document.getElementById('aNombreS');
