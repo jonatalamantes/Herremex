@@ -27,7 +27,7 @@
             if ($tipo == 'A')
             {
                 $res = $res . '<ul class="menu">
-                        <li><a href="menu.php"><p class="menuTitulos"><span class="fa fa-home fa-spin" ></span> Menu</p></a>
+                        <li><a href="menu.php"><p class="menuTitulos"><span class="fa fa-home fa-spin" ></span> Menú</p></a>
                         <li><a href="#"><p class="menuTitulos"><span class="fa fa-cog" ></span> Herramientas</p></a>
                             <ul class="sub-menu">
                                 <li><a href="BusquedaHerramientas.php">Consultas</a></li>
@@ -38,7 +38,7 @@
             else if ($tipo == 'C')
             {
                 $res = $res . '<ul class="menu">
-                        <li><a href="menu.php"><p class="menuTitulos"><span class="fa fa-home fa-spin" ></span> Menu</p></a>
+                        <li><a href="menu.php"><p class="menuTitulos"><span class="fa fa-home fa-spin" ></span> Menú</p></a>
                         <li><a href="#"><p class="menuTitulos"><span class="fa fa-cog" ></span> Herramientas</p></a>
                             <ul class="sub-menu">
                                 <li><a href="BusquedaHerramientas.php">Consultas</a></li>
@@ -56,7 +56,7 @@
             else if ($tipo == 'G')
             {
                 $res = $res . '<ul class="menu">
-                        <li><a href="menu.php"><p class="menuTitulos"><span class="fa fa-home fa-spin" ></span> Menu</p></a>
+                        <li><a href="menu.php"><p class="menuTitulos"><span class="fa fa-home fa-spin" ></span> Menú</p></a>
                         <li><a href="#"><p class="menuTitulos"><span class="fa fa-cog" ></span> Herramientas</p></a>
                             <ul class="sub-menu">
                                 <li><a href="BusquedaHerramientas.php">Consultas</a></li>
@@ -96,7 +96,7 @@
             else if ($tipo == 'J')
             {
                 $res = $res . '<ul class="menu">
-                        <li><a href="menu.php"><p class="menuTitulos"><span class="fa fa-home fa-spin" ></span> Menu</p></a>
+                        <li><a href="menu.php"><p class="menuTitulos"><span class="fa fa-home fa-spin" ></span> Menú</p></a>
                         <li><a href="#"><p class="menuTitulos"><span class="fa fa-cog" ></span> Herramientas</p></a>
                             <ul class="sub-menu">
                                 <li><a href="BusquedaHerramientas.php">Consultas</a></li>
@@ -138,7 +138,7 @@
             else if ($tipo == 'V')
             {
                 $res = $res . '<ul class="menu">
-                        <li><a href="menu.php"><p class="menuTitulos"><span class="fa fa-home fa-spin" ></span> Menu</p></a>
+                        <li><a href="menu.php"><p class="menuTitulos"><span class="fa fa-home fa-spin" ></span> Menú</p></a>
                         <li><a href="#"><p class="menuTitulos"><span class="fa fa-cog" ></span> Herramientas</p></a>
                             <ul class="sub-menu">
                                 <li><a href="BusquedaHerramientas.php">Consultas</a></li>
